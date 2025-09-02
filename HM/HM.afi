@@ -1,0 +1,26 @@
+#################################
+# IXFVERSION: 2025.2 (20250620.1)
+#################################
+
+INCLUDE "HM.GSG" { simulation="ix" type="gsg" reservoir="HM" gsg_type="geom_and_props" }
+INCLUDE "HM_REGIONS.GSG" { simulation="ix" type="gsg" reservoir="HM" gsg_type="props" }
+INCLUDE "HM_PERM_I.GSG" { simulation="ix" type="gsg" reservoir="HM" gsg_type="props" }
+INCLUDE "HM_PERM_J.GSG" { simulation="ix" type="gsg" reservoir="HM" gsg_type="props" }
+INCLUDE "HM_PERM_K.GSG" { simulation="ix" type="gsg" reservoir="HM" gsg_type="props" }
+INCLUDE "HM_POROSITY.GSG" { simulation="ix" type="gsg" reservoir="HM" gsg_type="props" }
+INCLUDE "HM_RESERVOIR_DEFINITION.ixf" { simulation="ix" type="ixf" reservoir="HM" }
+INCLUDE "HM_FLUIDS.ixf" { simulation="ix" type="ixf" reservoir="HM" }
+INCLUDE "HM_ROCKS.ixf" { simulation="ix" type="ixf" reservoir="HM" }
+INCLUDE "HM_REGIONS.ixf" { simulation="ix" type="ixf" reservoir="HM" }
+INCLUDE "HM_SEPARATORS.ixf" { simulation="ix" type="ixf" reservoir="HM" }
+INCLUDE "HM_WELLS.ixf" { simulation="ix" type="ixf" reservoir="HM" }
+INCLUDE "HM_WELL_CONNECTIONS.ixf" { simulation="ix" type="ixf" reservoir="HM" }
+INCLUDE "HM_RESERVOIR_SIMULATION_SETTINGS.ixf" { simulation="ix" type="ixf" reservoir="HM" }
+INCLUDE "HM_PROPERTY_EDITS.ixf" { simulation="ix" type="ixf" reservoir="HM" }
+INCLUDE "SNARK_FM_RES_IX_EDIT.ixf" { simulation="ix" type="ixf" reservoir="HM" }
+EXTENSION "custom_scripts"
+INCLUDE "HM_WELL_COMPLETIONS.ixf" { simulation="fm" type="ixf" }
+INCLUDE "HM_HM_FM.ixf" { simulation="fm" type="ixf" }
+INCLUDE "HM.obsh" { simulation="fm" type="obsh" historical_data_control="New Historical Data Control 1" }
+INCLUDE "HM_FM_INIT.ixf" { simulation="fm" type="ixf" }
+INCLUDE "HM_REPORT_SETTINGS.ixf" { simulation="fm" type="ixf" }

@@ -1,0 +1,120 @@
+######################################
+# IXFVERSION: 2025.2 Petrel
+######################################
+
+MODEL_DEFINITION
+
+
+START
+DATE "1-Jan-1998"
+#TIME 0.0
+
+AllWellCalculationOptions {
+    WellConnectionNTGTreatment=SCALE_KH_AND_R0
+}
+
+WellDef "PROD1" {
+    HeadDensityCalculation=SEGMENTED
+    AllowCrossFlow="True"
+    PseudoPressureModel=NONE
+    Friction="True"
+    Acceleration="True"
+    Undefined="False"
+    WellToCellConnections {
+    }
+    
+    ResVolConditions {
+        Method=RESERVOIR
+        LimitByAverageRsRv="True"
+    }
+    
+    TubingHeadPressureCalculationOptions {
+        FlowRatioExtrapolationMethod=LINEAR
+    }
+    
+}
+
+WellDef "PROD2" {
+    HeadDensityCalculation=SEGMENTED
+    AllowCrossFlow="True"
+    PseudoPressureModel=NONE
+    Friction="True"
+    Acceleration="True"
+    Undefined="False"
+    WellToCellConnections {
+    }
+    
+    ResVolConditions {
+        Method=RESERVOIR
+        LimitByAverageRsRv="True"
+    }
+    
+    TubingHeadPressureCalculationOptions {
+        FlowRatioExtrapolationMethod=LINEAR
+    }
+    
+}
+
+WellDef "PROD3" {
+    HeadDensityCalculation=SEGMENTED
+    AllowCrossFlow="True"
+    PseudoPressureModel=NONE
+    Friction="True"
+    Acceleration="True"
+    Undefined="False"
+    WellToCellConnections {
+    }
+    
+    ResVolConditions {
+        Method=RESERVOIR
+        LimitByAverageRsRv="True"
+    }
+    
+    TubingHeadPressureCalculationOptions {
+        FlowRatioExtrapolationMethod=LINEAR
+    }
+    
+}
+
+WellDef "PROD4" {
+    HeadDensityCalculation=SEGMENTED
+    AllowCrossFlow="True"
+    PseudoPressureModel=NONE
+    Friction="True"
+    Acceleration="True"
+    Undefined="False"
+    WellToCellConnections {
+    }
+    
+    ResVolConditions {
+        Method=RESERVOIR
+        LimitByAverageRsRv="True"
+    }
+    
+    TubingHeadPressureCalculationOptions {
+        FlowRatioExtrapolationMethod=LINEAR
+    }
+    
+}
+
+WellDef "PRODUCER" {
+    HeadDensityCalculation=SEGMENTED
+    AllowCrossFlow="True"
+    PseudoPressureModel=NONE
+    Friction="True"
+    Acceleration="True"
+    Undefined="False"
+    WellToCellConnections {
+    }
+    
+    ResVolConditions {
+        Method=RESERVOIR
+        LimitByAverageRsRv="True"
+    }
+    
+    TubingHeadPressureCalculationOptions {
+        FlowRatioExtrapolationMethod=LINEAR
+    }
+    
+}
+

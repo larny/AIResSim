@@ -1,0 +1,44 @@
+INFO 2025-09-01 22:19:01,410 SLB-C2C6RV3 Version 2025.1.2
+INFO 2025-09-01 22:19:01,411 SLB-C2C6RV3 Operation: ix
+DEBUG 2025-09-01 22:19:01,417 SLB-C2C6RV3 Arguments: ix --principal=HM.afi --version=2025.2 --np=8 --auto-hybrid
+DEBUG 2025-09-01 22:19:01,422 SLB-C2C6RV3 HM task has no pre processing
+INFO 2025-09-01 22:19:01,422 SLB-C2C6RV3 Workflow starting task: HM
+INFO 2025-09-01 22:19:01,425 SLB-C2C6RV3 IX Simulation overriding MPI unspecified
+INFO 2025-09-01 22:19:01,428 SLB-C2C6RV3 Detecting Intel MPI installation folder.
+DEBUG 2025-09-01 22:19:01,429 SLB-C2C6RV3 Examining configuration variable: IntelMpiWinDir.
+DEBUG 2025-09-01 22:19:01,429 SLB-C2C6RV3 Intel MPI installation dir found in configuration: None
+DEBUG 2025-09-01 22:19:01,442 SLB-C2C6RV3 Analysing IX input
+DEBUG 2025-09-01 22:19:01,442 SLB-C2C6RV3 Using installed IX analyzer version 2025.2
+DEBUG 2025-09-01 22:19:01,562 SLB-C2C6RV3 np: 8 thread: 1
+DEBUG 2025-09-01 22:19:01,611 SLB-C2C6RV3 PRTMonitor created
+DEBUG 2025-09-01 22:19:01,615 SLB-C2C6RV3 Target end time for progress monitoring is 1:0:52 h:m:s
+DEBUG 2025-09-01 22:19:01,615 SLB-C2C6RV3 Simulation Properties asked getGPUs(): 0
+INFO 2025-09-01 22:19:01,616 SLB-C2C6RV3 Submission Command: "C:\Program Files (x86)\Intel\oneAPI\mpi\2021.4.0\bin\../env\vars.bat" & "C:\Program Files (x86)\Intel\oneAPI\mpi\2021.4.0\bin\mpiexec" -n 8 -localonly -envall -wdir "C:\Users\trang\Desktop\02 Petrel RE_7Workflows_20200301\Petrel RE Workflow1_Introductory\EXs_Completed\EX1_SNARK\SNARK_Completed.sim\HM" C:\ecl\2025.2\ix\x64_ilmpi\ix.exe --threads 1 HM.afi
+INFO 2025-09-01 22:19:01,617 SLB-C2C6RV3 Launching: "C:\Program Files (x86)\Intel\oneAPI\mpi\2021.4.0\bin\../env\vars.bat" & "C:\Program Files (x86)\Intel\oneAPI\mpi\2021.4.0\bin\mpiexec" -n 8 -localonly -envall -wdir "C:\Users\trang\Desktop\02 Petrel RE_7Workflows_20200301\Petrel RE Workflow1_Introductory\EXs_Completed\EX1_SNARK\SNARK_Completed.sim\HM" C:\ecl\2025.2\ix\x64_ilmpi\ix.exe --threads 1 HM.afi
+DEBUG 2025-09-01 22:19:03,709 SLB-C2C6RV3 Located extra process hydra_pmi_proxy.exe with pid 74724
+DEBUG 2025-09-01 22:19:05,726 SLB-C2C6RV3 Timestamp=2025-09-01T14:19:05Z Duration=0 s Progress=13% Remaining=unknown Date=01 May 1999 Timestep=0 s
+DEBUG 2025-09-01 22:19:05,731 SLB-C2C6RV3 IX found report step 16
+DEBUG 2025-09-01 22:19:07,767 SLB-C2C6RV3 calc_stepping_progress: i=[19,63] stime_per_time=653.753039927025 tstep=30.477272727272727 dt=2.0512332916259766
+DEBUG 2025-09-01 22:19:07,768 SLB-C2C6RV3 Timestamp=2025-09-01T14:19:07Z Duration=2 s Progress=50% Remaining=3 s Date=01 Jan 2003 Timestep=30 d
+DEBUG 2025-09-01 22:19:07,781 SLB-C2C6RV3 IX found report step 60
+DEBUG 2025-09-01 22:19:09,845 SLB-C2C6RV3 calc_stepping_progress: i=[19,103] stime_per_time=621.4918320811651 tstep=30.44047619047619 dt=4.114293813705444
+DEBUG 2025-09-01 22:19:09,847 SLB-C2C6RV3 Timestamp=2025-09-01T14:19:09Z Duration=4 s Progress=83% Remaining=1 s Date=01 May 2006 Timestep=30 d
+DEBUG 2025-09-01 22:19:09,868 SLB-C2C6RV3 IX found report step 100
+DEBUG 2025-09-01 22:19:11,904 SLB-C2C6RV3 calc_stepping_progress: i=[19,123] stime_per_time=586.3938327329541 tstep=30.451923076923077 dt=5.40080714225769
+DEBUG 2025-09-01 22:19:11,905 SLB-C2C6RV3 Timestamp=2025-09-01T14:19:11Z Duration=5 s Progress=100% Remaining=0 s Date=01 Jan 2008 Timestep=30 d
+DEBUG 2025-09-01 22:19:11,919 SLB-C2C6RV3 IX found report step 120
+INFO 2025-09-01 22:19:11,935 SLB-C2C6RV3 Intersect has finished
+DEBUG 2025-09-01 22:19:11,944 SLB-C2C6RV3 Using installed IX analyzer version 2025.2
+DEBUG 2025-09-01 22:19:12,889 SLB-C2C6RV3 HM task has no post processing
+DEBUG 2025-09-01 22:19:12,889 SLB-C2C6RV3 HM task has no pre processing
+INFO 2025-09-01 22:19:12,889 SLB-C2C6RV3 Workflow starting task: HM summary conversion
+INFO 2025-09-01 22:19:12,895 SLB-C2C6RV3 Creating temp conversion directory convert_20250901141912_438a34a0
+INFO 2025-09-01 22:19:12,896 SLB-C2C6RV3 Submission Command: C:\ecl\2025.2\ix\x64_ilmpi\ConvertSummaryData2DataBase.exe HM.afi convert_20250901141912_438a34a0
+INFO 2025-09-01 22:19:12,896 SLB-C2C6RV3 Launching: C:\ecl\2025.2\ix\x64_ilmpi\ConvertSummaryData2DataBase.exe HM.afi convert_20250901141912_438a34a0
+INFO 2025-09-01 22:19:14,928 SLB-C2C6RV3 Conversion has finished
+DEBUG 2025-09-01 22:19:14,947 SLB-C2C6RV3 HM task has no post processing
+INFO 2025-09-01 22:19:14,948 SLB-C2C6RV3 Removing temp conversion directory convert_20250901141912_438a34a0
+DEBUG 2025-09-01 22:19:14,953 SLB-C2C6RV3 Pinging end cookie.
+DEBUG 2025-09-01 22:19:14,954 SLB-C2C6RV3 Pinging end cookie.
+INFO 2025-09-01 22:19:14,954 SLB-C2C6RV3 Workflow has finished
+INFO 2025-09-01 22:19:14,955 SLB-C2C6RV3 Session in progress.

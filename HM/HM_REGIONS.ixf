@@ -1,0 +1,47 @@
+######################################
+# IXFVERSION: 2025.2 Petrel
+######################################
+
+MODEL_DEFINITION
+
+RegionFamily "PVT_REGION" [
+    RegionNames    RegionIndices
+     "PVTNUM_1"                1
+]
+
+RegionFamily "EQUILIBRATION_REGION" [
+    RegionNames    RegionIndices
+     "EQLNUM_1"                1
+]
+
+RegionFamily "ROCK_COMPACTION_REGION" [
+    RegionNames    RegionIndices
+    "ROCKNUM_1"                1
+]
+
+RegionFamily "SATURATION_FUNCTION_DRAINAGE_TABLE_NO" [
+    RegionNames    RegionIndices
+     "SATNUM_1"                1
+]
+
+EquilibriumRegionMapping [
+    ModelNames             MappingTypes         RegionFamilyNames    RegionNames
+    "PVTNUM_1"    EQUILIBRIUM_EQL_MODEL    "EQUILIBRATION_REGION"     "EQLNUM_1"
+]
+
+FluidRegionMapping [
+    ModelNames       MappingTypes    RegionFamilyNames    RegionNames
+    "PVTNUM_1"    FLUID_PVT_MODEL         "PVT_REGION"     "PVTNUM_1"
+]
+
+RockRegionMapping [
+                 ModelNames                    MappingTypes                          RegionFamilyNames    RegionNames
+        "Rock compaction 1"                  ROCK_MECHANICS                   "ROCK_COMPACTION_REGION"    "ROCKNUM_1"
+    "Saturation function 1"    DRAINAGE_SATURATION_FUNCTION    "SATURATION_FUNCTION_DRAINAGE_TABLE_NO"     "SATNUM_1"
+]
+
+
+START
+DATE "1-Jan-1998"
+#TIME 0.0
+

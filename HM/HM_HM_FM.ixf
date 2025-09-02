@@ -1,0 +1,557 @@
+######################################
+# IXFVERSION: 2025.2 Petrel
+######################################
+
+MODEL_DEFINITION
+
+FieldManagement {
+    UptimeMode=CONTEXTUAL
+    StartDay=1
+    StartMonth=JANUARY
+    StartYear=1998
+    StartHour=0
+    StartMinute=0
+    StartSecond=0
+}
+
+Units {
+    UnitSystem=ECLIPSE_FIELD
+}
+
+
+START
+DATE "1-Jan-1998"
+#TIME 0.0
+
+HistoricalDataControl "New Historical Data Control 1" {
+    Wells=[Well("PROD1") Well("PROD2") Well("PROD3") Well("PROD4") Well("PRODUCER")]
+    Active="True"
+    ExtrapolationMethod=LINEAR
+}
+
+Group "Field" {
+    Members=[Well("PROD1") Well("PROD2") Well("PROD3") Well("PROD4") Well("PRODUCER")]
+}
+
+Well "PROD1" {
+    Type=PRODUCER
+    Status=OPEN
+    HistoricalControlModes=[RES_VOLUME_PRODUCTION_RATE]
+    BottomHoleRefDepth=7642.20614688
+}
+
+Well "PROD2" {
+    Type=PRODUCER
+    Status=OPEN
+    HistoricalControlModes=[RES_VOLUME_PRODUCTION_RATE]
+    BottomHoleRefDepth=7903.37268605
+}
+
+Well "PROD3" {
+    Type=PRODUCER
+    Status=OPEN
+    HistoricalControlModes=[RES_VOLUME_PRODUCTION_RATE]
+    BottomHoleRefDepth=7838.89535067
+}
+
+Well "PROD4" {
+    Type=PRODUCER
+    Status=OPEN
+    HistoricalControlModes=[RES_VOLUME_PRODUCTION_RATE]
+    BottomHoleRefDepth=8051.02981479
+}
+
+Well "PRODUCER" {
+    Type=PRODUCER
+    Status=OPEN
+    HistoricalControlModes=[RES_VOLUME_PRODUCTION_RATE]
+    BottomHoleRefDepth=7909.7236306
+}
+
+
+DATE "1-Feb-1998"
+#TIME 31.0
+
+
+DATE "1-Mar-1998"
+#TIME 59.0
+
+
+DATE "1-Apr-1998"
+#TIME 90.0
+
+
+DATE "1-May-1998"
+#TIME 120.0
+
+
+DATE "1-Jun-1998"
+#TIME 151.0
+
+
+DATE "1-Jul-1998"
+#TIME 181.0
+
+
+DATE "1-Aug-1998"
+#TIME 212.0
+
+
+DATE "1-Sep-1998"
+#TIME 243.0
+
+
+DATE "1-Oct-1998"
+#TIME 273.0
+
+
+DATE "1-Nov-1998"
+#TIME 304.0
+
+
+DATE "1-Dec-1998"
+#TIME 334.0
+
+
+DATE "1-Jan-1999"
+#TIME 365.0
+
+
+DATE "1-Feb-1999"
+#TIME 396.0
+
+
+DATE "1-Mar-1999"
+#TIME 424.0
+
+
+DATE "1-Apr-1999"
+#TIME 455.0
+
+
+DATE "1-May-1999"
+#TIME 485.0
+
+
+DATE "1-Jun-1999"
+#TIME 516.0
+
+
+DATE "1-Jul-1999"
+#TIME 546.0
+
+
+DATE "1-Aug-1999"
+#TIME 577.0
+
+
+DATE "1-Sep-1999"
+#TIME 608.0
+
+
+DATE "1-Oct-1999"
+#TIME 638.0
+
+
+DATE "1-Nov-1999"
+#TIME 669.0
+
+
+DATE "1-Dec-1999"
+#TIME 699.0
+
+
+DATE "1-Jan-2000"
+#TIME 730.0
+
+
+DATE "1-Feb-2000"
+#TIME 761.0
+
+
+DATE "1-Mar-2000"
+#TIME 790.0
+
+
+DATE "1-Apr-2000"
+#TIME 821.0
+
+
+DATE "1-May-2000"
+#TIME 851.0
+
+
+DATE "1-Jun-2000"
+#TIME 882.0
+
+
+DATE "1-Jul-2000"
+#TIME 912.0
+
+
+DATE "1-Aug-2000"
+#TIME 943.0
+
+
+DATE "1-Sep-2000"
+#TIME 974.0
+
+
+DATE "1-Oct-2000"
+#TIME 1004.0
+
+
+DATE "1-Nov-2000"
+#TIME 1035.0
+
+
+DATE "1-Dec-2000"
+#TIME 1065.0
+
+
+DATE "1-Jan-2001"
+#TIME 1096.0
+
+
+DATE "1-Feb-2001"
+#TIME 1127.0
+
+
+DATE "1-Mar-2001"
+#TIME 1155.0
+
+
+DATE "1-Apr-2001"
+#TIME 1186.0
+
+
+DATE "1-May-2001"
+#TIME 1216.0
+
+
+DATE "1-Jun-2001"
+#TIME 1247.0
+
+
+DATE "1-Jul-2001"
+#TIME 1277.0
+
+
+DATE "1-Aug-2001"
+#TIME 1308.0
+
+
+DATE "1-Sep-2001"
+#TIME 1339.0
+
+
+DATE "1-Oct-2001"
+#TIME 1369.0
+
+
+DATE "1-Nov-2001"
+#TIME 1400.0
+
+
+DATE "1-Dec-2001"
+#TIME 1430.0
+
+
+DATE "1-Jan-2002"
+#TIME 1461.0
+
+
+DATE "1-Feb-2002"
+#TIME 1492.0
+
+
+DATE "1-Mar-2002"
+#TIME 1520.0
+
+
+DATE "1-Apr-2002"
+#TIME 1551.0
+
+
+DATE "1-May-2002"
+#TIME 1581.0
+
+
+DATE "1-Jun-2002"
+#TIME 1612.0
+
+
+DATE "1-Jul-2002"
+#TIME 1642.0
+
+
+DATE "1-Aug-2002"
+#TIME 1673.0
+
+
+DATE "1-Sep-2002"
+#TIME 1704.0
+
+
+DATE "1-Oct-2002"
+#TIME 1734.0
+
+
+DATE "1-Nov-2002"
+#TIME 1765.0
+
+
+DATE "1-Dec-2002"
+#TIME 1795.0
+
+
+DATE "1-Jan-2003"
+#TIME 1826.0
+
+
+DATE "1-Feb-2003"
+#TIME 1857.0
+
+
+DATE "1-Mar-2003"
+#TIME 1885.0
+
+
+DATE "1-Apr-2003"
+#TIME 1916.0
+
+
+DATE "1-May-2003"
+#TIME 1946.0
+
+
+DATE "1-Jun-2003"
+#TIME 1977.0
+
+
+DATE "1-Jul-2003"
+#TIME 2007.0
+
+
+DATE "1-Aug-2003"
+#TIME 2038.0
+
+
+DATE "1-Sep-2003"
+#TIME 2069.0
+
+
+DATE "1-Oct-2003"
+#TIME 2099.0
+
+
+DATE "1-Nov-2003"
+#TIME 2130.0
+
+
+DATE "1-Dec-2003"
+#TIME 2160.0
+
+
+DATE "1-Jan-2004"
+#TIME 2191.0
+
+
+DATE "1-Feb-2004"
+#TIME 2222.0
+
+
+DATE "1-Mar-2004"
+#TIME 2251.0
+
+
+DATE "1-Apr-2004"
+#TIME 2282.0
+
+
+DATE "1-May-2004"
+#TIME 2312.0
+
+
+DATE "1-Jun-2004"
+#TIME 2343.0
+
+
+DATE "1-Jul-2004"
+#TIME 2373.0
+
+
+DATE "1-Aug-2004"
+#TIME 2404.0
+
+
+DATE "1-Sep-2004"
+#TIME 2435.0
+
+
+DATE "1-Oct-2004"
+#TIME 2465.0
+
+
+DATE "1-Nov-2004"
+#TIME 2496.0
+
+
+DATE "1-Dec-2004"
+#TIME 2526.0
+
+
+DATE "1-Jan-2005"
+#TIME 2557.0
+
+
+DATE "1-Feb-2005"
+#TIME 2588.0
+
+
+DATE "1-Mar-2005"
+#TIME 2616.0
+
+
+DATE "1-Apr-2005"
+#TIME 2647.0
+
+
+DATE "1-May-2005"
+#TIME 2677.0
+
+
+DATE "1-Jun-2005"
+#TIME 2708.0
+
+
+DATE "1-Jul-2005"
+#TIME 2738.0
+
+
+DATE "1-Aug-2005"
+#TIME 2769.0
+
+
+DATE "1-Sep-2005"
+#TIME 2800.0
+
+
+DATE "1-Oct-2005"
+#TIME 2830.0
+
+
+DATE "1-Nov-2005"
+#TIME 2861.0
+
+
+DATE "1-Dec-2005"
+#TIME 2891.0
+
+
+DATE "1-Jan-2006"
+#TIME 2922.0
+
+
+DATE "1-Feb-2006"
+#TIME 2953.0
+
+
+DATE "1-Mar-2006"
+#TIME 2981.0
+
+
+DATE "1-Apr-2006"
+#TIME 3012.0
+
+
+DATE "1-May-2006"
+#TIME 3042.0
+
+
+DATE "1-Jun-2006"
+#TIME 3073.0
+
+
+DATE "1-Jul-2006"
+#TIME 3103.0
+
+
+DATE "1-Aug-2006"
+#TIME 3134.0
+
+
+DATE "1-Sep-2006"
+#TIME 3165.0
+
+
+DATE "1-Oct-2006"
+#TIME 3195.0
+
+
+DATE "1-Nov-2006"
+#TIME 3226.0
+
+
+DATE "1-Dec-2006"
+#TIME 3256.0
+
+
+DATE "1-Jan-2007"
+#TIME 3287.0
+
+
+DATE "1-Feb-2007"
+#TIME 3318.0
+
+
+DATE "1-Mar-2007"
+#TIME 3346.0
+
+
+DATE "1-Apr-2007"
+#TIME 3377.0
+
+
+DATE "1-May-2007"
+#TIME 3407.0
+
+
+DATE "1-Jun-2007"
+#TIME 3438.0
+
+
+DATE "1-Jul-2007"
+#TIME 3468.0
+
+
+DATE "1-Aug-2007"
+#TIME 3499.0
+
+
+DATE "1-Sep-2007"
+#TIME 3530.0
+
+
+DATE "1-Oct-2007"
+#TIME 3560.0
+
+
+DATE "1-Nov-2007"
+#TIME 3591.0
+
+
+DATE "1-Dec-2007"
+#TIME 3621.0
+
+
+DATE "1-Jan-2008"    SAVE_RESTART    "*.0000"
+#TIME 3652.0    SAVE_RESTART    "*.0000"
+
+HistoricalDataControl "New Historical Data Control 1" {
+    Wells=[]
+}
+
+
+END_INPUT
+#DATE 1-Jan-2008 00:00:00
