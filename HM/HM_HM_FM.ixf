@@ -6,6 +6,7 @@ MODEL_DEFINITION
 
 FieldManagement {
     UptimeMode=CONTEXTUAL
+    SimulationLevel=SKIP_TIMESTEP
     StartDay=1
     StartMonth=JANUARY
     StartYear=1998

@@ -1,3 +1,3 @@
 <afo>
-  <restart date="2008-01-01T" directory="HM.0000" index="120" position="END_TIMESTEP" time="3652.0" />
+  <error location="HM.afo" msg="File not found" />
 </afo>
