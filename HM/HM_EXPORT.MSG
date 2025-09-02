@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="us-ascii" standalone="no" ?>
-<eclipse>
-
-  <message date="" time="">Exporting directly with Field Management Strategy</message>
-
-  <warning date="" time="">Optimized property modification used - 'Well connection factor options' must be set to 'Use projected Peaceman calculation in simulator' in Strategies tab</warning>
-
-</eclipse>
