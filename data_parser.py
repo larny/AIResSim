@@ -340,12 +340,12 @@ class ReservoirDataParser:
             # Estimate dimensions - this is simplified
             # In practice, you'd need to parse the actual grid structure
             total_cells = len(coords) // 3  # Assuming x,y,z coordinates
-            # Default assumption for a typical reservoir grid
-            nx, ny, nz = 30, 30, 15  # This should be determined from actual data
+            # HM case grid dimensions based on your specification
+            nx, ny, nz = 24, 25, 12  # 7200 total cells with ~5183 active
             self.grid_dims = (nx, ny, nz)
         else:
-            # Default grid dimensions
-            self.grid_dims = (30, 30, 15)
+            # Default grid dimensions for HM case
+            self.grid_dims = (24, 25, 12)
         
         return self.grid_dims
     
