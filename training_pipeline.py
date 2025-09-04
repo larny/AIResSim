@@ -80,7 +80,17 @@ class TrainingDataGenerator:
                          for _ in range(nx)]
             
             # Predict pressure using current model
-            predicted_pressure = self.workflow.predict_pressure(saturation, sample)
+            if hasattr(self.workflow, 'predict_pressure_active'):
+                # For optimized workflow, convert to active cells
+                saturation_flat = [saturation[i][j][k] for i in range(len(saturation)) 
+                                 for j in range(len(saturation[i])) 
+                                 for k in range(len(saturation[i][j]))][:57]  # Take first 57 for active cells
+                predicted_pressure_active = self.workflow.predict_pressure_active(saturation_flat, sample)
+                # Convert back to 3D (simplified)
+                predicted_pressure = [[[predicted_pressure_active[0] if predicted_pressure_active else 2000.0 
+                                       for _ in range(nz)] for _ in range(ny)] for _ in range(nx)]
+            else:
+                predicted_pressure = self.workflow.predict_pressure(saturation, sample)
             
             # Create training sample
             # Input: saturation field at t
@@ -112,7 +122,17 @@ class TrainingDataGenerator:
                               for _ in range(nx)]
             
             # Predict saturation using current model
-            predicted_saturation = self.workflow.predict_saturation(pressure, prev_saturation)
+            if hasattr(self.workflow, 'predict_saturation_active'):
+                # For optimized workflow, convert to active cells
+                pressure_flat = [pressure[i][j][k] for i in range(len(pressure)) 
+                               for j in range(len(pressure[i])) 
+                               for k in range(len(pressure[i][j]))][:57]
+                prev_sat_flat = [prev_saturation[i][j][k] for i in range(len(prev_saturation)) 
+                               for j in range(len(prev_saturation[i])) 
+                               for k in range(len(prev_saturation[i][j]))][:57]
+                predicted_saturation = self.workflow.predict_saturation_active(pressure_flat, prev_sat_flat)
+            else:
+                predicted_saturation = self.workflow.predict_saturation(pressure, prev_saturation)
             
             # Create training sample
             sample_data = {
