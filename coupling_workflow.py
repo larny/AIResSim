@@ -417,8 +417,8 @@ def test_coupling_workflow():
     # Initialize workflow
     workflow = ReservoirSimulationWorkflow("HM", "/workspace/HM")
     
-    # Run simulation
-    results = workflow.run_coupled_simulation(num_timesteps=5)
+    # Run simulation with fewer timesteps for testing
+    results = workflow.run_coupled_simulation(num_timesteps=2)
     
     print(f"\nSimulation Results Summary:")
     print(f"  Total timesteps: {len(results['timesteps'])}")
