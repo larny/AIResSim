@@ -1,0 +1,34 @@
+######################################
+# IXFVERSION: 2024.3 Petrel
+######################################
+
+MODEL_DEFINITION
+
+
+START
+DATE "1-Jan-1998"
+#TIME 0.0
+
+WellDef "PROD1" {
+    PseudoPressureModel=NONE
+}
+
+WellDef "PROD2" {
+    PseudoPressureModel=NONE
+}
+
+WellDef "PROD3" {
+    PseudoPressureModel=NONE
+}
+
+WellDef "PROD4" {
+    PseudoPressureModel=NONE
+}
+
+WellDef "PRODUCER" {
+    PseudoPressureModel=NONE
+}
+
+
+END_INPUT
+#DATE 1-Jan-1998 00:00:00

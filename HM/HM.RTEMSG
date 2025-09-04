@@ -1,0 +1,18 @@
+<rte>
+<comment source="slbrun" date="" time="">Version 2025.1.2</comment>
+<comment source="slbrun" date="" time="">Operation: ix</comment>
+<comment source="slbrun" date="" time="">Workflow starting task: HM</comment>
+<comment source="slbrun" date="" time="">IX Simulation overriding MPI unspecified</comment>
+<comment source="slbrun" date="" time="">Detecting Intel MPI installation folder.</comment>
+<comment source="slbrun" date="" time="">Submission Command: "C:\Program Files (x86)\Intel\oneAPI\mpi\2021.4.0\bin\../env\vars.bat" &amp; "C:\Program Files (x86)\Intel\oneAPI\mpi\2021.4.0\bin\mpiexec" -n 8 -localonly -envall -wdir "C:\Users\trang\Desktop\02 Petrel RE_7Workflows_20200301\Petrel RE Workflow1_Introductory\EXs_Completed\EX1_SNARK\SNARK_Completed.sim\HM" C:\ecl\2025.2\ix\x64_ilmpi\ix.exe --threads 1 HM.afi</comment>
+<comment source="slbrun" date="" time="">Launching: "C:\Program Files (x86)\Intel\oneAPI\mpi\2021.4.0\bin\../env\vars.bat" &amp; "C:\Program Files (x86)\Intel\oneAPI\mpi\2021.4.0\bin\mpiexec" -n 8 -localonly -envall -wdir "C:\Users\trang\Desktop\02 Petrel RE_7Workflows_20200301\Petrel RE Workflow1_Introductory\EXs_Completed\EX1_SNARK\SNARK_Completed.sim\HM" C:\ecl\2025.2\ix\x64_ilmpi\ix.exe --threads 1 HM.afi</comment>
+<comment source="slbrun" date="" time="">Intersect has finished</comment>
+<comment source="slbrun" date="" time="">Workflow starting task: HM summary conversion</comment>
+<comment source="slbrun" date="" time="">Creating temp conversion directory convert_20250904044912_dcf26c11</comment>
+<comment source="slbrun" date="" time="">Submission Command: C:\ecl\2025.2\ix\x64_ilmpi\ConvertSummaryData2DataBase.exe HM.afi convert_20250904044912_dcf26c11</comment>
+<comment source="slbrun" date="" time="">Launching: C:\ecl\2025.2\ix\x64_ilmpi\ConvertSummaryData2DataBase.exe HM.afi convert_20250904044912_dcf26c11</comment>
+<comment source="slbrun" date="" time="">Conversion has finished</comment>
+<comment source="slbrun" date="" time="">Removing temp conversion directory convert_20250904044912_dcf26c11</comment>
+<comment source="slbrun" date="" time="">Workflow has finished</comment>
+<comment source="slbrun" date="" time="">Session in progress.</comment>
+</rte>

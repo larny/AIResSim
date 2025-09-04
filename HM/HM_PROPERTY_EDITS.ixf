@@ -1,0 +1,20 @@
+######################################
+# IXFVERSION: 2025.2 Petrel
+######################################
+
+MODEL_DEFINITION
+
+BoxPropertyEdit "Modifier set 1" [
+                                Property                                    Expression            Grid    I1    I2    J1    J2    K1    K2
+    "PERMEABILITY_MULTIPLIER_COMPACTION"    "0.1 * PERMEABILITY_MULTIPLIER_COMPACTION"    "CoarseGrid"     1    24     1    25     1    12
+]
+
+BoxPropertyEdit "Modifier set 1" {
+    UnsetValueBehavior=COPY
+}
+
+
+START
+DATE "1-Jan-1998"
+#TIME 0.0
+

@@ -1,0 +1,10 @@
+######################################
+# IXFVERSION: 2025.2 Petrel
+######################################
+
+MODEL_DEFINITION
+# Add user edit IXF here ...
+XYPlotSummaryReport "SummaryReport"{
+Unified=TRUE
+
+}

@@ -1,0 +1,90 @@
+######################################
+# IXFVERSION: 2025.2 Petrel
+######################################
+
+
+START
+DATE "1-Jan-1998"
+#TIME 0.0
+
+
+WellDef "PROD1" {
+    Undefined="False"
+    
+    WellToCellConnections  [
+             Cell                Completion    SegmentNode    Status    MeasuredDepth    WellBoreRadius    Skin    PiMultiplier    PressureEquivalentRadius    PermeabilityThickness    Transmissibility    PenetrationDirection
+         (13 8 1)     "Completion (13 8 1)"              1      OPEN    7642.20614688            0.3125     7.5               1               88.1785616516            12485.6873976       6.72794557855                       K
+         (13 8 2)     "Completion (13 8 2)"              1      OPEN    7704.70614688            0.3125     7.5               1                88.133036617            198.583303446      0.107011341572                       K
+         (13 8 3)     "Completion (13 8 3)"              1      OPEN    7745.95614688            0.3125     7.5               1               88.0902593797            11.4434281729    0.00616679156527                       K
+         (13 8 8)     "Completion (13 8 8)"              1      OPEN    7776.68814384            0.3125     7.5               1               88.2230203819            30456.5511531       16.4109634823                       K
+         (13 8 9)     "Completion (13 8 9)"              1      OPEN     7816.1701408            0.3125     7.5               1               88.2858690303            23267.4202305        12.536550629                       K
+        (13 8 10)    "Completion (13 8 10)"              1      OPEN     7853.6701408            0.3125     7.5               1               88.2508658432            1977.11767933       1.06530863666                       K
+        (13 8 11)    "Completion (13 8 11)"              1      OPEN     7897.4201408            0.3125     7.5               1               88.1766126282             31.276784726     0.0168536062703                       K
+        (13 8 12)    "Completion (13 8 12)"              1      OPEN     7938.6500704            0.3125     7.5               1               88.1840602677            28.5661076989     0.0153928494288                       K
+    ]
+    
+}
+
+
+WellDef "PROD2" {
+    Undefined="False"
+    
+    WellToCellConnections  [
+             Cell                Completion    SegmentNode    Status    MeasuredDepth    WellBoreRadius    Skin    PiMultiplier    PressureEquivalentRadius    PermeabilityThickness    Transmissibility    PenetrationDirection
+         (7 20 1)     "Completion (7 20 1)"              1      OPEN    7903.37268605            0.3125     7.5               1                87.075310141            27972.2533192       15.0873761248                       K
+         (7 20 2)     "Completion (7 20 2)"              1      OPEN    7965.87268605            0.3125     7.5               1               87.0681193086            13901.9504327       7.49833314885                       K
+         (7 20 3)     "Completion (7 20 3)"              1      OPEN    8007.12268605            0.3125     7.5               1               86.9553920632             8.5988390961    0.00463843711798                       K
+         (7 20 8)     "Completion (7 20 8)"              1      OPEN    8021.36211921            0.3125     7.5               1               87.0191913655            1055.87881247        0.5695366349                       K
+         (7 20 9)     "Completion (7 20 9)"              1      OPEN    8044.35155238            0.3125     7.5               1               87.0212048483            4538.33834053       2.44795648971                       K
+        (7 20 10)    "Completion (7 20 10)"              1      OPEN    8068.83077619            0.3125     7.5               1               87.0228386311            1624.55308035      0.876274369781                       K
+    ]
+    
+}
+
+
+WellDef "PROD3" {
+    Undefined="False"
+    
+    WellToCellConnections  [
+             Cell                Completion    SegmentNode    Status    MeasuredDepth    WellBoreRadius    Skin    PiMultiplier    PressureEquivalentRadius    PermeabilityThickness    Transmissibility    PenetrationDirection
+        (16 16 1)    "Completion (16 16 1)"              1      OPEN    7838.89535067            0.3125     7.5               1               86.6115611842            1573.21032041      0.848886680474                       K
+        (16 16 2)    "Completion (16 16 2)"              1      OPEN    7874.16070133            0.3125     7.5               1               86.6093424994            7967.81480743       4.29935208057                       K
+        (16 16 3)    "Completion (16 16 3)"              1      OPEN    7915.41070133            0.3125     7.5               1               86.5646273744            16.0913405228    0.00868306584517                       K
+        (16 16 6)    "Completion (16 16 6)"              1      OPEN    7936.81994693            0.3125     7.5               1               86.6531569725            4865.22069421       2.62512259598                       K
+        (16 16 7)    "Completion (16 16 7)"              1      OPEN    7973.22919252            0.3125     7.5               1               86.7357010598            21226.5176719       11.4523415757                       K
+        (16 16 8)    "Completion (16 16 8)"              1      OPEN    8023.22919252            0.3125     7.5               1               86.7376112805            26151.4388488       14.1094602761                       K
+        (16 16 9)    "Completion (16 16 9)"              1      OPEN    8063.02459626            0.3125     7.5               1               86.7229715499            6755.30058538       3.64472760095                       K
+    ]
+    
+}
+
+
+WellDef "PROD4" {
+    Undefined="False"
+    
+    WellToCellConnections  [
+             Cell                Completion    SegmentNode    Status    MeasuredDepth    WellBoreRadius    Skin    PiMultiplier    PressureEquivalentRadius    PermeabilityThickness    Transmissibility    PenetrationDirection
+        (17 21 1)    "Completion (17 21 1)"              1      OPEN    8051.02981479            0.3125     7.5               1               86.7473696259             19436.303053       10.4863597405                       K
+        (17 21 2)    "Completion (17 21 2)"              1      OPEN    8099.03962957            0.3125     7.5               1               86.7311063813            10018.9709626       5.40555650968                       K
+        (17 21 3)    "Completion (17 21 3)"              1      OPEN       8140.28954            0.3125     7.5               1               86.6071082197            13.2882040944     0.0071701942875                       K
+        (17 21 5)    "Completion (17 21 5)"              1      OPEN    8154.77972521            0.3125     7.5               1                86.648277061            4.31246297113    0.00232688161065                       K
+    ]
+    
+}
+
+
+WellDef "PRODUCER" {
+    Undefined="False"
+    
+    WellToCellConnections  [
+            Cell               Completion    SegmentNode    Status    MeasuredDepth    WellBoreRadius    Skin    PiMultiplier    PressureEquivalentRadius    PermeabilityThickness    Transmissibility    PenetrationDirection
+         (6 8 1)     "Completion (6 8 1)"              1      OPEN     7909.7236306            0.3125     7.5               1               90.2248053161            12463.4687718       6.70427057396                       K
+         (6 8 2)     "Completion (6 8 2)"              1      OPEN     7972.2236306            0.3125     7.5               1               90.2117057033            7904.45524962       4.25196164611                       K
+         (6 8 3)     "Completion (6 8 3)"              1      OPEN     8013.4736306            0.3125     7.5               1               89.9315568563            6.88765658785    0.00370588119673                       K
+         (6 8 8)     "Completion (6 8 8)"              1      OPEN     8023.6974839            0.3125     7.5               1               90.1771016902            207.880934341      0.111826494181                       K
+         (6 8 9)     "Completion (6 8 9)"              1      OPEN    8042.27816603            0.3125     7.5               1               90.1708918279            7119.44016712       3.82981826383                       K
+        (6 8 10)    "Completion (6 8 10)"              1      OPEN    8068.70249742            0.3125     7.5               1               89.9353610101            6.90577013889    0.00371561519292                       K
+    ]
+    
+}
+

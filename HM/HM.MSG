@@ -1,0 +1,769 @@
+<ix>
+<message date="1/1/1998" time="">
+ Sections will report the elapsed time (E), the minimum and maximum CPU time (C [min,max]), the minimum, maximum and total memory usage (M [min,max,total]) and the minimum, maximum and total peak memory usage during the simulation (P [min,max,total]) across all processes.
+</message>
+<message date="1/1/1998" time="">
+ Loading extension: custom_scripts
+</message>
+<message date="1/1/1998" time="">
+ Use of property aliases is enabled. There are 1097 such aliases which can be used in place of fully qualified property identifiers. Refer to Appendix &apos;Property identifiers&apos; in the Intersect User Guide for details.
+</message>
+<message date="1/1/1998" time="">
+ Checking for licenses.
+</message>
+<message date="1/1/1998" time="">
+ Successfully checked out 1 license of feature ix_fm.
+</message>
+<message date="1/1/1998" time="">
+ Running simulation using: &apos;HM_RESERVOIR_DEFINITION.ixf&apos;.
+</message>
+<message date="1/1/1998" time="">
+ Running simulation using: &apos;HM_FLUIDS.ixf&apos;.
+</message>
+<message date="1/1/1998" time="">
+ Running simulation using: &apos;HM_ROCKS.ixf&apos;.
+</message>
+<message date="1/1/1998" time="">
+ Running simulation using: &apos;HM_REGIONS.ixf&apos;.
+</message>
+<message date="1/1/1998" time="">
+ Running simulation using: &apos;HM_SEPARATORS.ixf&apos;.
+</message>
+<message date="1/1/1998" time="">
+ Running simulation using: &apos;HM_WELLS.ixf&apos;.
+</message>
+<message date="1/1/1998" time="">
+ Running simulation using: &apos;HM_WELL_CONNECTIONS.ixf&apos;.
+</message>
+<message date="1/1/1998" time="">
+ Running simulation using: &apos;HM_RESERVOIR_SIMULATION_SETTINGS.ixf&apos;.
+</message>
+<message date="1/1/1998" time="">
+ Running simulation using: &apos;HM_PROPERTY_EDITS.ixf&apos;.
+</message>
+<message date="1/1/1998" time="">
+ Running simulation using: &apos;SNARK_FM_RES_IX_EDIT.ixf&apos;.
+</message>
+<message date="1/1/1998" time="">
+ Running simulation using: &apos;HM_WELL_COMPLETIONS.ixf&apos;.
+</message>
+<message date="1/1/1998" time="">
+ Running simulation using: &apos;HM_PRED_FM.ixf&apos;.
+</message>
+<message date="1/1/1998" time="">
+ Running simulation using: &apos;HM_FM_INIT.ixf&apos;.
+</message>
+<message date="1/1/1998" time="">
+ Running simulation using: &apos;HM_REPORT_SETTINGS.ixf&apos;.
+</message>
+<message date="1/1/1998" time="">
+ Running simulation using: &apos;Report_FM_EDIT.ixf&apos;.
+</message>
+<message date="1/1/1998" time="">
+ Field Management FluidSystem FluidType is set to BLACKOIL
+</message>
+<warning date="1/1/1998" time="">
+ Edit property &apos;PERMEABILITY_MULTIPLIER_COMPACTION&apos; is not valid for node BoxPropertyEdit. It will be removed.
+</warning>
+<message date="1/1/1998" time="">
+ FluidSystem can be omitted in a single reservoir simulation.
+</message>
+<warning date="1/1/1998" time="">
+ Separator &apos;Standard_Conditions&apos; will have no effect as the fluid model is black-oil
+</warning>
+<warning date="1/1/1998" time="">
+ OilSurfaceDensity value defined in oil table &apos;OilTable1&apos; will be ignored. It is only used if Variable API is present.
+</warning>
+<warning date="1/1/1998" time="">
+ The maximum saturated pressure for the oil PVT (= 3300 psi) is different from the maximum pressure for the gas PVT (= 3400 psi).
+</warning>
+<warning date="1/1/1998" time="">
+ The saturated oil density is not decreasing with increasing bubble point pressure. Please review the OilTable FormationVolumeFactor data. (Set VerbosityLevel to 2 in FluidMgr for more information.)
+</warning>
+<message date="1/1/1998" time="">
+ Running the default workflow (grids processed in Intersect).
+</message>
+<message date="1/1/1998" time="">
+ Performing internal adjacency calculation for grid CoarseGrid.
+</message>
+<message date="1/1/1998" time="">
+ Processing bulk data fault definitions
+</message>
+<message date="1/1/1998" time="">
+ Bulk data fault &apos;Fault 1&apos; has 390 connections
+</message>
+<message date="1/1/1998" time="">
+ Bulk data fault &apos;Fault 2&apos; has 675 connections
+</message>
+<message date="1/1/1998" time="">
+ Bulk data fault &apos;Fault 3&apos; has 283 connections
+</message>
+<message date="1/1/1998" time="">
+ 3 faults, defined in bulk data, have been loaded.
+</message>
+<message date="1/1/1998" time="">
+ Identifying connections assigned to faults.
+</message>
+<message date="1/1/1998" time="">
+ Loaded region family &apos;PVT_REGION&apos;.
+</message>
+<message date="1/1/1998" time="">
+ Loaded region family &apos;EQUILIBRATION_REGION&apos;.
+</message>
+<message date="1/1/1998" time="">
+ Loaded region family &apos;ROCK_COMPACTION_REGION&apos;.
+</message>
+<message date="1/1/1998" time="">
+ Loaded region family &apos;SATURATION_FUNCTION_DRAINAGE_TABLE_NO&apos;.
+</message>
+<message date="1/1/1998" time="">
+ Loaded grid property &apos;PERM_I&apos;.
+</message>
+<message date="1/1/1998" time="">
+ Loaded grid property &apos;PERM_J&apos;.
+</message>
+<message date="1/1/1998" time="">
+ Loaded grid property &apos;PERM_K&apos;.
+</message>
+<message date="1/1/1998" time="">
+ Loaded grid property &apos;POROSITY&apos;.
+</message>
+<message date="1/1/1998" time="">
+ Cell volume not provided as a cell property. Calculating from geometry.
+</message>
+<message date="1/1/1998" time="">
+ Cell center coordinate not provided as a cell property for 3 axis directions. Recalculating all cell center coordinates from geometry.
+</message>
+<message date="1/1/1998" time="">
+ Using depth calc method: top_depth = min(top), bottom_depth = max(bottom)
+</message>
+<message date="1/1/1998" time="">
+ Pore volume not provided as a cell property. Calculating from cell volume and porosity.
+</message>
+<warning date="1/1/1998" time="">
+ There were 1585 cell(s) with negative or undefined porosity. The porosity for the cell(s) will be reset to zero.
+</warning>
+<message date="1/1/1998" time="">
+ 0 cells (of 6768) have been marked as inactive due to ACTNUM, host or missing geometry filtering.
+</message>
+<message date="1/1/1998" time="">
+ 1585 cells (of 6768) have been marked as inactive due to Min Pore Volume filtering. 0 additional cells which fall below the filter threshold were already inactive.
+</message>
+<message date="1/1/1998" time="">
+ Calculating transmissibilities.
+</message>
+<message date="1/1/1998" time="">
+ Pinchouts will not be created across LGR boundaries.
+</message>
+<message date="1/1/1998" time="">
+ Processing minimum pore volume thresholds for a second time.
+</message>
+<message date="1/1/1998" time="">
+ 4628 neighbor connections and 0 non-neighbor connections have been removed due to one (or both) of the cells being inactive.
+</message>
+<message date="1/1/1998" time="">
+ Performing parallel partitioning.
+</message>
+<message date="1/1/1998" time="">
+ Reordering local cells by global cell ID.
+</message>
+<message date="1/1/1998" time="">
+ There are 475 non neighbor connections which will be inlined for the purposes of Initial 3D transmissibility reporting.
+</message>
+<message date="1/1/1998" time="">
+ Validating node &apos;Equilibrium[&apos;EQLNUM_1_PVTNUM_1&apos;]&apos; created from node &apos;Equilibrium[&apos;PVTNUM_1&apos;]&apos;.
+</message>
+<message date="1/1/1998" time="">
+ Rock models will be associated with reservoir cells using the RegionFamily ROCKMODEL_REGION.
+</message>
+<message date="1/1/1998" time="">
+ Fluid models will be associated with reservoir cells using the RegionFamily FLUIDMODEL_REGION.
+</message>
+<message date="1/1/1998" time="">
+ Equilibration models will be associated with reservoir cells using the RegionFamily EQUILMODEL_REGION.
+</message>
+<message date="1/1/1998" time="">
+ Successfully loaded the grid.
+</message>
+<message date="1/1/1998" time="">
+ Equilibrium fluid type for &apos;EQLNUM_1_PVTNUM_1&apos; is not set. It will be recalculated.
+</message>
+<message date="1/1/1998" time="">
+ Equilibration fluid type for &apos;EQLNUM_1_PVTNUM_1&apos; with top=7552.66 ft, bottom=9017.77 ft, datum=7000 ft, goc=7000 ft, woc=8200 ft is set to &apos;BUBBLE_POINT&apos;.
+</message>
+<message date="1/1/1998" time="">
+ Equilibration mode based on mobile phases in reservoir=WO, gas=DRY, rsvd/pbvd=YES, rvvd/pdvd=NO, datum_vs_goc=EQUAL.
+</message>
+<message date="1/1/1998" time="">
+ Setting unspecified temperature for equilibrium model &apos;EQLNUM_1_PVTNUM_1&apos; to standard conditions (60 degF).
+</message>
+<warning date="1/1/1998" time="">
+ The gas oil contact depth (7000.000 ft) for the equilibrium model &apos;EQLNUM_1_PVTNUM_1&apos; is not within the range of cell depths. Cell depths for this model range from 7552.661 ft to 9017.771 ft.
+</warning>
+<warning date="1/1/1998" time="">
+ The datum depth (7000.000 ft) for the equilibrium model &apos;EQLNUM_1_PVTNUM_1&apos; is not within the range of cell depths. Cells associated with this model extend from 7552.661 ft to 9017.771 ft.
+</warning>
+<message date="1/1/1998" time="">
+ The oil gas transition adjustment will not be applied to the equilibrium model &apos;EQLNUM_1_PVTNUM_1&apos; since the GOC is not within the reservoir.
+</message>
+<warning date="1/1/1998" time="">
+ The equilibrium model &apos;EQLNUM_1_PVTNUM_1&apos; is not thermodynamically consistent since the oil phase pressure at the GOC equals 3035.7 psi whilst the bubble point pressure at the GOC equals 1062.2 psi.
+</warning>
+<message date="1/1/1998" time="">
+ Checking for licenses.
+</message>
+<message date="1/1/1998" time="">
+ Successfully checked out 1 license of feature ix_base.
+</message>
+<message date="1/1/1998" time="">
+ Total number of time steps = 0, nonlinear iterations = 0, linear iterations = 0 
+
+</message>
+<warning date="1/1/1998" time="">
+ OilSurfaceDensity value defined in oil table &apos;OilTable1&apos; will be ignored. It is only used if Variable API is present.
+</warning>
+<warning date="1/1/1998" time="">
+ The maximum saturated pressure for the oil PVT (= 3300 psi) is different from the maximum pressure for the gas PVT (= 3400 psi).
+</warning>
+<warning date="1/1/1998" time="">
+ The saturated oil density is not decreasing with increasing bubble point pressure. Please review the OilTable FormationVolumeFactor data. (Set VerbosityLevel to 2 in FluidMgr for more information.)
+</warning>
+<message date="1/1/1998" time="">
+ Well &apos;PROD1&apos; has been assigned fluid model &apos;PVTNUM_1&apos;.
+</message>
+<message date="1/1/1998" time="">
+ Well &apos;PROD2&apos; has been assigned fluid model &apos;PVTNUM_1&apos;.
+</message>
+<message date="1/1/1998" time="">
+ Well &apos;PROD3&apos; has been assigned fluid model &apos;PVTNUM_1&apos;.
+</message>
+<message date="1/1/1998" time="">
+ Well &apos;PROD4&apos; has been assigned fluid model &apos;PVTNUM_1&apos;.
+</message>
+<message date="1/1/1998" time="">
+ Well &apos;PRODUCER&apos; has been assigned fluid model &apos;PVTNUM_1&apos;.
+</message>
+<message date="1/1/1998" time="">
+ Well &apos;PROD1&apos; has been assigned separator &apos;Default&apos;.
+</message>
+<message date="1/1/1998" time="">
+ Well &apos;PRODUCER&apos; has been assigned separator &apos;Default&apos;.
+</message>
+<message date="1/1/1998" time="">
+ 3D reports output have been activated.
+</message>
+<message date="1/1/1998" time="">
+ Group hierarchy:
+  FM_FIELD
+  . Field
+  . . CENTER
+  . . WEST
+
+</message>
+<warning date="1/1/1998" time="">
+ Bottom hole pressure limit for production well &apos;PROD1&apos; is at its default value of 14.6959 psi.
+</warning>
+<message date="1/1/1998" time="">
+ Well &apos;PROD2&apos; has been assigned separator &apos;Default&apos;.
+</message>
+<warning date="1/1/1998" time="">
+ Bottom hole pressure limit for production well &apos;PROD2&apos; is at its default value of 14.6959 psi.
+</warning>
+<message date="1/1/1998" time="">
+ Well &apos;PROD3&apos; has been assigned separator &apos;Default&apos;.
+</message>
+<warning date="1/1/1998" time="">
+ Bottom hole pressure limit for production well &apos;PROD3&apos; is at its default value of 14.6959 psi.
+</warning>
+<message date="1/1/1998" time="">
+ Well &apos;PROD4&apos; has been assigned separator &apos;Default&apos;.
+</message>
+<warning date="1/1/1998" time="">
+ Bottom hole pressure limit for production well &apos;PROD4&apos; is at its default value of 14.6959 psi.
+</warning>
+<warning date="1/1/1998" time="">
+ Bottom hole pressure limit for production well &apos;PRODUCER&apos; is at its default value of 14.6959 psi.
+</warning>
+<comment date="1/2/1998" time="31.00000000000000">
+          
+</comment>
+<message date="1/2/1998" time="31.00000000000000">
+ Total number of time steps = 4, nonlinear iterations = 11, linear iterations = 32 
+
+</message>
+<comment date="1/3/1998" time="59.00000000000000">
+          
+</comment>
+<message date="1/3/1998" time="59.00000000000000">
+ Total number of time steps = 5, nonlinear iterations = 13, linear iterations = 45 
+
+</message>
+<comment date="1/4/1998" time="90.00000000000000">
+          
+</comment>
+<message date="1/4/1998" time="90.00000000000000">
+ Total number of time steps = 6, nonlinear iterations = 16, linear iterations = 53 
+
+</message>
+<comment date="1/5/1998" time="120.00000000000000">
+          
+</comment>
+<message date="1/5/1998" time="120.00000000000000">
+ Total number of time steps = 7, nonlinear iterations = 19, linear iterations = 60 
+
+</message>
+<comment date="1/6/1998" time="151.00000000000000">
+          
+</comment>
+<message date="1/6/1998" time="151.00000000000000">
+ Total number of time steps = 8, nonlinear iterations = 21, linear iterations = 65 
+
+</message>
+<comment date="1/7/1998" time="181.00000000000000">
+          
+</comment>
+<message date="1/7/1998" time="181.00000000000000">
+ Total number of time steps = 9, nonlinear iterations = 23, linear iterations = 70 
+
+</message>
+<comment date="1/8/1998" time="212.00000000000000">
+          
+</comment>
+<message date="1/8/1998" time="212.00000000000000">
+ Total number of time steps = 10, nonlinear iterations = 25, linear iterations = 76 
+
+</message>
+<comment date="1/9/1998" time="243.00000000000000">
+          
+</comment>
+<message date="1/9/1998" time="243.00000000000000">
+ Total number of time steps = 11, nonlinear iterations = 27, linear iterations = 82 
+
+</message>
+<comment date="1/10/1998" time="273.00000000000000">
+          
+</comment>
+<message date="1/10/1998" time="273.00000000000000">
+ Total number of time steps = 12, nonlinear iterations = 30, linear iterations = 90 
+
+</message>
+<comment date="1/11/1998" time="304.00000000000000">
+          
+</comment>
+<message date="1/11/1998" time="304.00000000000000">
+ Total number of time steps = 13, nonlinear iterations = 33, linear iterations = 97 
+
+</message>
+<comment date="1/12/1998" time="334.00000000000000">
+          
+</comment>
+<message date="1/12/1998" time="334.00000000000000">
+ Total number of time steps = 14, nonlinear iterations = 35, linear iterations = 102 
+
+</message>
+<comment date="1/1/1999" time="365.00000000000000">
+          
+</comment>
+<message date="1/1/1999" time="365.00000000000000">
+ Total number of time steps = 15, nonlinear iterations = 37, linear iterations = 108 
+
+</message>
+<comment date="1/2/1999" time="396.00000000000000">
+          
+</comment>
+<message date="1/2/1999" time="396.00000000000000">
+ Total number of time steps = 16, nonlinear iterations = 39, linear iterations = 113 
+
+</message>
+<comment date="1/3/1999" time="424.00000000000000">
+          
+</comment>
+<message date="1/3/1999" time="424.00000000000000">
+ Total number of time steps = 17, nonlinear iterations = 41, linear iterations = 119 
+
+</message>
+<comment date="1/4/1999" time="455.00000000000000">
+          
+</comment>
+<message date="1/4/1999" time="455.00000000000000">
+ Total number of time steps = 18, nonlinear iterations = 44, linear iterations = 127 
+
+</message>
+<comment date="1/5/1999" time="485.00000000000000">
+          
+</comment>
+<message date="1/5/1999" time="485.00000000000000">
+ Total number of time steps = 19, nonlinear iterations = 47, linear iterations = 134 
+
+</message>
+<comment date="1/6/1999" time="516.00000000000000">
+          
+</comment>
+<message date="1/6/1999" time="516.00000000000000">
+ Total number of time steps = 20, nonlinear iterations = 49, linear iterations = 140 
+
+</message>
+<comment date="1/7/1999" time="546.00000000000000">
+          
+</comment>
+<message date="1/7/1999" time="546.00000000000000">
+ Total number of time steps = 21, nonlinear iterations = 52, linear iterations = 147 
+
+</message>
+<comment date="1/8/1999" time="577.00000000000000">
+          
+</comment>
+<message date="1/8/1999" time="577.00000000000000">
+ Total number of time steps = 22, nonlinear iterations = 54, linear iterations = 153 
+
+</message>
+<comment date="1/9/1999" time="608.00000000000000">
+          
+</comment>
+<message date="1/9/1999" time="608.00000000000000">
+ Total number of time steps = 23, nonlinear iterations = 56, linear iterations = 159 
+
+</message>
+<comment date="1/10/1999" time="638.00000000000000">
+          
+</comment>
+<message date="1/10/1999" time="638.00000000000000">
+ Total number of time steps = 24, nonlinear iterations = 58, linear iterations = 165 
+
+</message>
+<comment date="1/11/1999" time="669.00000000000000">
+          
+</comment>
+<message date="1/11/1999" time="669.00000000000000">
+ Total number of time steps = 25, nonlinear iterations = 61, linear iterations = 173 
+
+</message>
+<comment date="1/12/1999" time="699.00000000000000">
+          
+</comment>
+<message date="1/12/1999" time="699.00000000000000">
+ Total number of time steps = 26, nonlinear iterations = 64, linear iterations = 180 
+
+</message>
+<comment date="1/1/2000" time="730.00000000000000">
+          
+</comment>
+<message date="1/1/2000" time="730.00000000000000">
+ Total number of time steps = 27, nonlinear iterations = 67, linear iterations = 187 
+
+</message>
+<comment date="1/2/2000" time="761.00000000000000">
+          
+</comment>
+<message date="1/2/2000" time="761.00000000000000">
+ Total number of time steps = 28, nonlinear iterations = 69, linear iterations = 193 
+
+</message>
+<comment date="1/3/2000" time="790.00000000000000">
+          
+</comment>
+<message date="1/3/2000" time="790.00000000000000">
+ Total number of time steps = 29, nonlinear iterations = 71, linear iterations = 199 
+
+</message>
+<comment date="1/4/2000" time="821.00000000000000">
+          
+</comment>
+<message date="1/4/2000" time="821.00000000000000">
+ Total number of time steps = 30, nonlinear iterations = 73, linear iterations = 205 
+
+</message>
+<comment date="1/5/2000" time="851.00000000000000">
+          
+</comment>
+<message date="1/5/2000" time="851.00000000000000">
+ Total number of time steps = 31, nonlinear iterations = 76, linear iterations = 214 
+
+</message>
+<comment date="1/6/2000" time="882.00000000000000">
+          
+</comment>
+<message date="1/6/2000" time="882.00000000000000">
+ Total number of time steps = 32, nonlinear iterations = 80, linear iterations = 230 
+
+</message>
+<comment date="1/7/2000" time="912.00000000000000">
+          
+</comment>
+<message date="1/7/2000" time="912.00000000000000">
+ Total number of time steps = 33, nonlinear iterations = 84, linear iterations = 244 
+
+</message>
+<comment date="1/8/2000" time="943.00000000000000">
+          
+</comment>
+<message date="1/8/2000" time="943.00000000000000">
+ Total number of time steps = 34, nonlinear iterations = 87, linear iterations = 255 
+
+</message>
+<comment date="1/9/2000" time="974.00000000000000">
+          
+</comment>
+<message date="1/9/2000" time="974.00000000000000">
+ Total number of time steps = 35, nonlinear iterations = 91, linear iterations = 269 
+
+</message>
+<comment date="1/10/2000" time="1004.00000000000000">
+          
+</comment>
+<message date="1/10/2000" time="1004.00000000000000">
+ Total number of time steps = 36, nonlinear iterations = 95, linear iterations = 282 
+
+</message>
+<comment date="1/11/2000" time="1035.00000000000000">
+          
+</comment>
+<message date="1/11/2000" time="1035.00000000000000">
+ Total number of time steps = 37, nonlinear iterations = 98, linear iterations = 294 
+
+</message>
+<comment date="1/12/2000" time="1065.00000000000000">
+          
+</comment>
+<message date="1/12/2000" time="1065.00000000000000">
+ Total number of time steps = 38, nonlinear iterations = 101, linear iterations = 304 
+
+</message>
+<comment date="1/1/2001" time="1096.00000000000000">
+          
+</comment>
+<message date="1/1/2001" time="1096.00000000000000">
+ Total number of time steps = 39, nonlinear iterations = 104, linear iterations = 314 
+
+</message>
+<comment date="1/2/2001" time="1127.00000000000000">
+          
+</comment>
+<message date="1/2/2001" time="1127.00000000000000">
+ Total number of time steps = 40, nonlinear iterations = 107, linear iterations = 324 
+
+</message>
+<comment date="1/3/2001" time="1155.00000000000000">
+          
+</comment>
+<message date="1/3/2001" time="1155.00000000000000">
+ Total number of time steps = 41, nonlinear iterations = 110, linear iterations = 334 
+
+</message>
+<comment date="1/4/2001" time="1186.00000000000000">
+          
+</comment>
+<message date="1/4/2001" time="1186.00000000000000">
+ Total number of time steps = 42, nonlinear iterations = 113, linear iterations = 346 
+
+</message>
+<comment date="1/5/2001" time="1216.00000000000000">
+          
+</comment>
+<message date="1/5/2001" time="1216.00000000000000">
+ Total number of time steps = 43, nonlinear iterations = 116, linear iterations = 359 
+
+</message>
+<comment date="1/6/2001" time="1247.00000000000000">
+          
+</comment>
+<message date="1/6/2001" time="1247.00000000000000">
+ Total number of time steps = 44, nonlinear iterations = 120, linear iterations = 372 
+
+</message>
+<comment date="1/7/2001" time="1277.00000000000000">
+          
+</comment>
+<message date="1/7/2001" time="1277.00000000000000">
+ Total number of time steps = 45, nonlinear iterations = 123, linear iterations = 381 
+
+</message>
+<comment date="1/8/2001" time="1308.00000000000000">
+          
+</comment>
+<message date="1/8/2001" time="1308.00000000000000">
+ Total number of time steps = 46, nonlinear iterations = 126, linear iterations = 391 
+
+</message>
+<comment date="1/9/2001" time="1339.00000000000000">
+          
+</comment>
+<message date="1/9/2001" time="1339.00000000000000">
+ Total number of time steps = 47, nonlinear iterations = 128, linear iterations = 399 
+
+</message>
+<comment date="1/10/2001" time="1369.00000000000000">
+          
+</comment>
+<message date="1/10/2001" time="1369.00000000000000">
+ Total number of time steps = 48, nonlinear iterations = 131, linear iterations = 408 
+
+</message>
+<comment date="1/11/2001" time="1400.00000000000000">
+          
+</comment>
+<message date="1/11/2001" time="1400.00000000000000">
+ Total number of time steps = 49, nonlinear iterations = 135, linear iterations = 419 
+
+</message>
+<comment date="1/12/2001" time="1430.00000000000000">
+          
+</comment>
+<message date="1/12/2001" time="1430.00000000000000">
+ Total number of time steps = 50, nonlinear iterations = 138, linear iterations = 429 
+
+</message>
+<comment date="1/1/2002" time="1461.00000000000000">
+          
+</comment>
+<message date="1/1/2002" time="1461.00000000000000">
+ Total number of time steps = 51, nonlinear iterations = 141, linear iterations = 438 
+
+</message>
+<comment date="1/2/2002" time="1492.00000000000000">
+          
+</comment>
+<message date="1/2/2002" time="1492.00000000000000">
+ Total number of time steps = 52, nonlinear iterations = 145, linear iterations = 448 
+
+</message>
+<comment date="1/3/2002" time="1520.00000000000000">
+          
+</comment>
+<message date="1/3/2002" time="1520.00000000000000">
+ Total number of time steps = 53, nonlinear iterations = 150, linear iterations = 461 
+
+</message>
+<comment date="1/4/2002" time="1551.00000000000000">
+          
+</comment>
+<message date="1/4/2002" time="1551.00000000000000">
+ Total number of time steps = 54, nonlinear iterations = 154, linear iterations = 472 
+
+</message>
+<comment date="1/5/2002" time="1581.00000000000000">
+          
+</comment>
+<message date="1/5/2002" time="1581.00000000000000">
+ Total number of time steps = 55, nonlinear iterations = 159, linear iterations = 485 
+
+</message>
+<comment date="1/6/2002" time="1612.00000000000000">
+          
+</comment>
+<message date="1/6/2002" time="1612.00000000000000">
+ Total number of time steps = 56, nonlinear iterations = 165, linear iterations = 498 
+
+</message>
+<comment date="1/7/2002" time="1642.00000000000000">
+          
+</comment>
+<message date="1/7/2002" time="1642.00000000000000">
+ Total number of time steps = 57, nonlinear iterations = 169, linear iterations = 510 
+
+</message>
+<comment date="1/8/2002" time="1673.00000000000000">
+          
+</comment>
+<message date="1/8/2002" time="1673.00000000000000">
+ Total number of time steps = 58, nonlinear iterations = 173, linear iterations = 521 
+
+</message>
+<comment date="1/9/2002" time="1704.00000000000000">
+          
+</comment>
+<message date="1/9/2002" time="1704.00000000000000">
+ Total number of time steps = 59, nonlinear iterations = 176, linear iterations = 530 
+
+</message>
+<comment date="1/10/2002" time="1734.00000000000000">
+          
+</comment>
+<message date="1/10/2002" time="1734.00000000000000">
+ Total number of time steps = 60, nonlinear iterations = 179, linear iterations = 539 
+
+</message>
+<comment date="1/11/2002" time="1765.00000000000000">
+          
+</comment>
+<message date="1/11/2002" time="1765.00000000000000">
+ Total number of time steps = 61, nonlinear iterations = 182, linear iterations = 548 
+
+</message>
+<comment date="1/12/2002" time="1795.00000000000000">
+          
+</comment>
+<message date="1/12/2002" time="1795.00000000000000">
+ Total number of time steps = 62, nonlinear iterations = 185, linear iterations = 557 
+
+</message>
+<comment date="1/1/2003" time="1826.00000000000000">
+          
+</comment>
+<warning date="1/1/2003" time="1826.00000000000000">
+ Command get_int_property on Reservoir with usage internal used.
+</warning>
+<message date="1/1/2003" time="1826.00000000000000">
+ Writing RESTART to &apos;HM.0000&apos; Time 1826.0 Date 01-JAN-2003.
+</message>
+<message date="1/1/2003" time="1826.00000000000000">
+ Calculating next time-step to be stored to restart.
+</message>
+<message date="1/1/2003" time="1826.00000000000000">
+ Selected time step is 82.1562 d.
+</message>
+<warning date="1/1/2003" time="1826.00000000000000">
+ Restart: Property &apos;QUIESCENT_OIL_PRESSURE&apos; could not be found in the property map.
+</warning>
+<warning date="1/1/2003" time="1826.00000000000000">
+ Restart: Property &apos;QUIESCENT_WATER_PRESSURE&apos; could not be found in the property map.
+</warning>
+<message date="1/1/2003" time="1826.00000000000000">
+ RESTART written.
+</message>
+<message date="1/1/2003" time="1826.00000000000000">
+ Total number of time steps = 63, nonlinear iterations = 187, linear iterations = 565 
+
+</message>
+<message date="1/1/2003" time="1826.00000000000000">
+ Total number of time steps = 63, nonlinear iterations = 187, linear iterations = 565 
+
+</message>
+<message date="1/1/2003" time="1826.00000000000000">
+ For reports on component CPU time in addition to component elapsed time set Simulation:ProcessInformation &gt; 1.
+</message>
+<message date="1/1/2003" time="1826.00000000000000">
+ For more frequent reports on component CPU and memory set Simulation:ProcessInformation &gt; 2.
+
+</message>
+<message date="1/1/2003" time="1826.00000000000000">
+ Reports on black-oil fluid model extrapolations can be enabled and controlled using FluidMgr.VerbosityLevel: 
+      1 = track total extrapolations during the simulation and show a report for each non-convergent time-step
+      2 = report after each time-step
+      3 = report for each nonlinear iteration where extrapolations were recorded
+
+</message>
+<message date="1/1/2003" time="1826.00000000000000">
+ Checked in license feature ix_base 
+</message>
+<message date="1/1/2003" time="1826.00000000000000">
+ Total FM coupled newtons 238
+</message>
+<message date="1/1/2003" time="1826.00000000000000">
+ Group hierarchy:
+  FM_FIELD
+  . Field
+  . . CENTER
+  . . WEST
+
+</message>
+<message date="1/1/2003" time="1826.00000000000000">
+ Time stepping stats: number of Init = 1, MIF = 2, Rep = 60, total = 63.
+</message>
+<message date="1/1/1998" time="">
+ Checked in license feature ix_fm 
+</message>
+<message date="1/1/1998" time="">
+ Run finished normally.
+</message>
+</ix>

@@ -1,0 +1,354 @@
+######################################
+# IXFVERSION: 2025.2 Petrel
+######################################
+
+MODEL_DEFINITION
+
+FieldManagement {
+    UptimeMode=CONTEXTUAL
+    StartDay=1
+    StartMonth=JANUARY
+    StartYear=1998
+    StartHour=0
+    StartMinute=0
+    StartSecond=0
+    ThermalModel=ISOTHERMAL
+}
+
+Units {
+    UnitSystem=ECLIPSE_FIELD
+}
+
+EclReports {
+    MaxWells=5
+    MaxGroups=4
+    MaxConnections=8
+}
+
+
+START
+DATE "1-Jan-1998"
+#TIME 0.0
+
+Group "CENTER" {
+    Members=[Well("PROD1") Well("PROD2") Well("PROD3") Well("PROD4")]
+}
+
+Group "WEST" {
+    Members=[Well("PRODUCER")]
+}
+
+Group "Field" {
+    Members=[Group("CENTER") Group("WEST")]
+}
+
+Well "PROD1" {
+    remove_all_constraints(setter="USER")
+    Type=PRODUCER
+    Status=OPEN
+    Constraints=[Constraint(8000 LIQUID_PRODUCTION_RATE)]
+    HistoricalControlModes=UNSET
+    HistoricalData=UNSET
+    BottomHoleRefDepth=7642.20614688
+    AutomaticClosureBehavior=ALL_COMPLETIONS_SHUTIN
+}
+
+Well "PROD2" {
+    remove_all_constraints(setter="USER")
+    Type=PRODUCER
+    Status=OPEN
+    Constraints=[Constraint(8000 LIQUID_PRODUCTION_RATE)]
+    HistoricalControlModes=UNSET
+    HistoricalData=UNSET
+    BottomHoleRefDepth=7903.37268605
+    AutomaticClosureBehavior=ALL_COMPLETIONS_SHUTIN
+}
+
+Well "PROD3" {
+    remove_all_constraints(setter="USER")
+    Type=PRODUCER
+    Status=OPEN
+    Constraints=[Constraint(8000 LIQUID_PRODUCTION_RATE)]
+    HistoricalControlModes=UNSET
+    HistoricalData=UNSET
+    BottomHoleRefDepth=7838.89535067
+    AutomaticClosureBehavior=ALL_COMPLETIONS_SHUTIN
+}
+
+Well "PROD4" {
+    remove_all_constraints(setter="USER")
+    Type=PRODUCER
+    Status=OPEN
+    Constraints=[Constraint(8000 LIQUID_PRODUCTION_RATE)]
+    HistoricalControlModes=UNSET
+    HistoricalData=UNSET
+    BottomHoleRefDepth=8051.02981479
+    AutomaticClosureBehavior=ALL_COMPLETIONS_SHUTIN
+}
+
+Well "PRODUCER" {
+    remove_all_constraints(setter="USER")
+    Type=PRODUCER
+    Status=OPEN
+    Constraints=[Constraint(8000 LIQUID_PRODUCTION_RATE)]
+    HistoricalControlModes=UNSET
+    HistoricalData=UNSET
+    BottomHoleRefDepth=7909.7236306
+    AutomaticClosureBehavior=ALL_COMPLETIONS_SHUTIN
+}
+
+Strategy "Strategy" {
+}
+
+FieldManagementStandardReport {
+    GroupReportFrequency=REPORT_TIME
+    GroupReportVerbosity=1
+    WellReportFrequency=REPORT_TIME
+    WellReportVerbosity=1
+    GasAccountingReportFrequency=REPORT_TIME
+    GasAccountingReportVerbosity=0
+}
+
+
+DATE "1-Feb-1998"
+#TIME 31.0
+
+
+DATE "1-Mar-1998"
+#TIME 59.0
+
+
+DATE "1-Apr-1998"
+#TIME 90.0
+
+
+DATE "1-May-1998"
+#TIME 120.0
+
+
+DATE "1-Jun-1998"
+#TIME 151.0
+
+
+DATE "1-Jul-1998"
+#TIME 181.0
+
+
+DATE "1-Aug-1998"
+#TIME 212.0
+
+
+DATE "1-Sep-1998"
+#TIME 243.0
+
+
+DATE "1-Oct-1998"
+#TIME 273.0
+
+
+DATE "1-Nov-1998"
+#TIME 304.0
+
+
+DATE "1-Dec-1998"
+#TIME 334.0
+
+
+DATE "1-Jan-1999"
+#TIME 365.0
+
+
+DATE "1-Feb-1999"
+#TIME 396.0
+
+
+DATE "1-Mar-1999"
+#TIME 424.0
+
+
+DATE "1-Apr-1999"
+#TIME 455.0
+
+
+DATE "1-May-1999"
+#TIME 485.0
+
+
+DATE "1-Jun-1999"
+#TIME 516.0
+
+
+DATE "1-Jul-1999"
+#TIME 546.0
+
+
+DATE "1-Aug-1999"
+#TIME 577.0
+
+
+DATE "1-Sep-1999"
+#TIME 608.0
+
+
+DATE "1-Oct-1999"
+#TIME 638.0
+
+
+DATE "1-Nov-1999"
+#TIME 669.0
+
+
+DATE "1-Dec-1999"
+#TIME 699.0
+
+
+DATE "1-Jan-2000"
+#TIME 730.0
+
+
+DATE "1-Feb-2000"
+#TIME 761.0
+
+
+DATE "1-Mar-2000"
+#TIME 790.0
+
+
+DATE "1-Apr-2000"
+#TIME 821.0
+
+
+DATE "1-May-2000"
+#TIME 851.0
+
+
+DATE "1-Jun-2000"
+#TIME 882.0
+
+
+DATE "1-Jul-2000"
+#TIME 912.0
+
+
+DATE "1-Aug-2000"
+#TIME 943.0
+
+
+DATE "1-Sep-2000"
+#TIME 974.0
+
+
+DATE "1-Oct-2000"
+#TIME 1004.0
+
+
+DATE "1-Nov-2000"
+#TIME 1035.0
+
+
+DATE "1-Dec-2000"
+#TIME 1065.0
+
+
+DATE "1-Jan-2001"
+#TIME 1096.0
+
+
+DATE "1-Feb-2001"
+#TIME 1127.0
+
+
+DATE "1-Mar-2001"
+#TIME 1155.0
+
+
+DATE "1-Apr-2001"
+#TIME 1186.0
+
+
+DATE "1-May-2001"
+#TIME 1216.0
+
+
+DATE "1-Jun-2001"
+#TIME 1247.0
+
+
+DATE "1-Jul-2001"
+#TIME 1277.0
+
+
+DATE "1-Aug-2001"
+#TIME 1308.0
+
+
+DATE "1-Sep-2001"
+#TIME 1339.0
+
+
+DATE "1-Oct-2001"
+#TIME 1369.0
+
+
+DATE "1-Nov-2001"
+#TIME 1400.0
+
+
+DATE "1-Dec-2001"
+#TIME 1430.0
+
+
+DATE "1-Jan-2002"
+#TIME 1461.0
+
+
+DATE "1-Feb-2002"
+#TIME 1492.0
+
+
+DATE "1-Mar-2002"
+#TIME 1520.0
+
+
+DATE "1-Apr-2002"
+#TIME 1551.0
+
+
+DATE "1-May-2002"
+#TIME 1581.0
+
+
+DATE "1-Jun-2002"
+#TIME 1612.0
+
+
+DATE "1-Jul-2002"
+#TIME 1642.0
+
+
+DATE "1-Aug-2002"
+#TIME 1673.0
+
+
+DATE "1-Sep-2002"
+#TIME 1704.0
+
+
+DATE "1-Oct-2002"
+#TIME 1734.0
+
+
+DATE "1-Nov-2002"
+#TIME 1765.0
+
+
+DATE "1-Dec-2002"
+#TIME 1795.0
+
+
+DATE "1-Jan-2003"    SAVE_RESTART    "*.0000"
+#TIME 1826.0    SAVE_RESTART    "*.0000"
+
+
+END_INPUT
+#DATE 1-Jan-2003 00:00:00

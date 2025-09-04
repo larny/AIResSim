@@ -1,0 +1,49 @@
+######################################
+# IXFVERSION: 2025.2 Petrel
+######################################
+
+MODEL_DEFINITION
+
+Simulation {
+    StartDay=1
+    StartMonth=JANUARY
+    StartYear=1998
+    StartHour=0
+    StartMinute=0
+    StartSecond=0
+}
+
+Units {
+    UnitSystem=ECLIPSE_FIELD
+}
+
+GridMgr {
+    RestartFileFormat=GSG
+    StrictTransOverrides="True"
+}
+
+CellActivity {
+    MinPoreVolume=1e-06
+    MinRockVolume=1e-06
+    PinchZ=0.001
+    PinchZTransCalcMethod=TOPBOT
+    MultZHandlingForTOPBOT=ALL
+    MinNNCTrans=1e-06
+    GlobalMinPVForTopLevelGrids="False"
+}
+
+StructuredInfo "CoarseGrid" {
+    FirstCellId=1
+    NumberCellsInI=24
+    NumberCellsInJ=25
+    NumberCellsInK=12
+}
+
+
+START
+DATE "1-Jan-1998"
+#TIME 0.0
+
+StructuredInfoMgr {
+}
+

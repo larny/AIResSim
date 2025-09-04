@@ -1,0 +1,31 @@
+#################################
+# IXFVERSION: 2025.2 (20250702.1)
+#################################
+
+SIMULATION ix "HM" {
+  INCLUDE "HM.GSG" { type="gsg" gsg_type="geom_and_props" }
+  INCLUDE "HM_REGIONS.GSG" { type="gsg" gsg_type="props" }
+  INCLUDE "HM_PERM_I.GSG" { type="gsg" gsg_type="props" }
+  INCLUDE "HM_PERM_J.GSG" { type="gsg" gsg_type="props" }
+  INCLUDE "HM_PERM_K.GSG" { type="gsg" gsg_type="props" }
+  INCLUDE "HM_POROSITY.GSG" { type="gsg" gsg_type="props" }
+  INCLUDE "HM_RESERVOIR_DEFINITION.ixf" { type="ixf" skip_model_def="true" }
+  INCLUDE "HM_FLUIDS.ixf" { type="ixf" skip_model_def="true" }
+  INCLUDE "HM_ROCKS.ixf" { type="ixf" skip_model_def="true" }
+  INCLUDE "HM_REGIONS.ixf" { type="ixf" skip_model_def="true" }
+  INCLUDE "HM_SEPARATORS.ixf" { type="ixf" skip_model_def="true" }
+  INCLUDE "HM_WELLS.ixf" { type="ixf" skip_model_def="true" }
+  INCLUDE "HM_WELL_CONNECTIONS.ixf" { type="ixf" skip_model_def="true" }
+  INCLUDE "HM_RESERVOIR_SIMULATION_SETTINGS.ixf" { type="ixf" skip_model_def="true" }
+  INCLUDE "HM_PROPERTY_EDITS.ixf" { type="ixf" skip_model_def="true" }
+  INCLUDE "SNARK_FM_RES_IX_EDIT.ixf" { type="ixf" skip_model_def="true" }
+  EXTENSION "custom_scripts"
+}
+SIMULATION fm {
+  INCLUDE "HM_WELL_COMPLETIONS.ixf" { type="ixf" skip_model_def="true" }
+  INCLUDE "HM_PRED_FM.ixf" { type="ixf" skip_model_def="true" }
+  INCLUDE "HM_FM_INIT.ixf" { type="ixf" skip_model_def="true" }
+  INCLUDE "HM_REPORT_SETTINGS.ixf" { type="ixf" skip_model_def="true" }
+  INCLUDE "Report_FM_EDIT.ixf" { type="ixf" skip_model_def="true" }
+}
+INCLUDE "HM.0000" { time="1826.0" type="restart" }
