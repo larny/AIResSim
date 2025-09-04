@@ -4,12 +4,21 @@ Includes 2D/3D visualization and error analysis functions
 """
 
 import math
-import matplotlib
-matplotlib.use('Agg')  # Use non-interactive backend
-import matplotlib.pyplot as plt
-from matplotlib.colors import LinearSegmentedColormap
-import numpy as np
 from typing import Dict, List, Tuple, Optional, Union
+
+# Import mock matplotlib for demonstration
+try:
+    import matplotlib
+    matplotlib.use('Agg')  # Use non-interactive backend
+    import matplotlib.pyplot as plt
+    from matplotlib.colors import LinearSegmentedColormap
+    import numpy as np
+except ImportError:
+    # Use mock version if matplotlib not available
+    import mock_matplotlib
+    import matplotlib.pyplot as plt
+    from matplotlib.colors import LinearSegmentedColormap
+    import numpy as np
 from optimized_coupling_workflow import OptimizedReservoirSimulationWorkflow
 
 class ReservoirVisualizer:
@@ -123,7 +132,16 @@ class ReservoirVisualizer:
         layer_indices = [int(i * (self.nz - 1) / (n_layers - 1)) for i in range(n_layers)]
         
         fig, axes = plt.subplots(2, 3, figsize=(15, 10))
-        axes = axes.flatten()
+        # Handle both numpy-style and list-style axes
+        if hasattr(axes, 'flatten'):
+            axes = axes.flatten()
+        else:
+            # Manual flatten for list of lists
+            flattened = []
+            for row in axes:
+                for ax in row:
+                    flattened.append(ax)
+            axes = flattened
         
         for idx, layer in enumerate(layer_indices):
             field_2d = self.extract_2d_slice(field_3d, layer)
