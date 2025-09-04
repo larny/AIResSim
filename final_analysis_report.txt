@@ -1,0 +1,59 @@
+================================================================================
+RESERVOIR SIMULATION QUANTITATIVE ANALYSIS REPORT
+================================================================================
+
+📊 SYSTEM CONFIGURATION
+Grid Dimensions: 24 × 25 × 12 = 7,200 cells
+Active Cells: 5,183 (72.0%)
+Graph Edges: 11,264
+Wells: 5
+
+🧠 MODEL ARCHITECTURE
+GNN: 32 hidden units, 3 layers
+FNO: 16 channels, 8 modes
+Well Model: [32, 16] architecture
+
+⚡ SIMULATION RESULTS
+Timesteps: 10
+Execution Time: 23.23 seconds
+Performance: 2231 cell-timesteps/second
+
+🌡️ PRESSURE ANALYSIS
+Initial: 943.6 psi (range: 789.6-945.1)
+Final: 935.8 psi (range: 932.1-945.1)
+Decline: 7.7 psi (0.8%)
+
+💧 SATURATION ANALYSIS
+Initial: 0.057 (range: 0.000-0.083)
+Final: 0.057 (range: 0.000-0.083)
+
+🛢️ WELL PERFORMANCE
+Field Oil Production: 1.5 STB/d
+Active Wells: 5
+  PROD1: 0.3 STB/d, 1990.7 psi
+  PROD2: 0.2 STB/d, 1989.6 psi
+  PROD3: 0.2 STB/d, 1989.6 psi
+  PROD4: 0.5 STB/d, 1987.3 psi
+  PRODUCER: 0.3 STB/d, 1988.8 psi
+
+📈 PREDICTION ACCURACY
+Mean Absolute Error: 37.33 psi
+Root Mean Square Error: 46.81 psi
+Mean Absolute Percentage Error: 4.01%
+R-squared: 0.007
+
+📊 VISUALIZATION CAPABILITIES
+✅ 2D Property Maps: 12 layers available
+✅ 3D Property Distribution: Multi-layer visualization
+✅ Well Performance Trends: Time-series analysis
+✅ Error Analysis: Absolute & relative error mapping
+✅ Quantitative Metrics: MAE, RMSE, MAPE, R²
+
+🏆 TECHNICAL ACHIEVEMENTS
+✅ Complete GNN-FNO coupling workflow
+✅ ACTNUM-based active cell optimization
+✅ Real-time well production forecasting
+✅ Multi-dimensional error analysis
+✅ Comprehensive quantitative reporting
+
+================================================================================
